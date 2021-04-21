@@ -182,7 +182,7 @@ async def on_message(message, filename = "Players.json"):
         add_player()
         input = message.content.replace('$faccept ', '')
         
-        if message.author.mention != Fighters.Enemy:
+        if message.author.mention == Fighters.Enemy:
 
           if Fighters.challenger != message.content:
 
